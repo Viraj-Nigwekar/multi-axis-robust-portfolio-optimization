@@ -1,4 +1,4 @@
-\begin{verbatim}
+
 # Multi-Axis Robust Portfolio Optimization
 
 This repository contains the code, simulations, and empirical pipeline for a unified multi-axis robustness framework in portfolio optimization.  
@@ -76,4 +76,3 @@ Users may download identical series using the ticker list in the notebook.
 
 This repository is currently private and does not include a license.  
 A license will be added upon public release.
-\end{verbatim}
