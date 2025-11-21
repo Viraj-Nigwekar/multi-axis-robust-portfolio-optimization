@@ -1,0 +1,3 @@
+===== PIPELINE CODE (for reproducibility) =====
+
+Paste your pipeline code here manually if needed.

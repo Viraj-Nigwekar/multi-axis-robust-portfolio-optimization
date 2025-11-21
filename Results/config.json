@@ -1,0 +1,41 @@
+{
+    "tickers": [
+        "AAPL",
+        "MSFT",
+        "GOOGL",
+        "AMZN",
+        "NVDA",
+        "JPM",
+        "V",
+        "UNH",
+        "JNJ",
+        "PG",
+        "BAC",
+        "HD",
+        "DIS",
+        "MA",
+        "ADBE",
+        "NFLX",
+        "XOM",
+        "CSCO",
+        "INTC",
+        "CRM"
+    ],
+    "start": "2015-01-01",
+    "end": "2024-12-31",
+    "T_train_days": 756,
+    "test_horizon": 21,
+    "B_bootstrap": 500,
+    "S_scenarios": 200,
+    "eigen_factors": [
+        0.75,
+        1.0,
+        1.25
+    ],
+    "eigen_k_frac": 0.2,
+    "transaction_cost": 0.001,
+    "rf_annual": 0.02,
+    "seed": 42,
+    "n_jobs": 4,
+    "timestamp": "2025-11-20 17:09:26.369074"
+}
