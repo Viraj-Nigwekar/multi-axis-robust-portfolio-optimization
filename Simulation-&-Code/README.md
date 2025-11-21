@@ -31,10 +31,10 @@ The notebook includes:
 
 This notebook is designed for:
 
-- Reproducible research
-- Empirical validation of robustness methods
-- Generation of figures for the accompanying paper
-- Transparent documentation of the simulation pipeline
+- Reproducible research.
+- Empirical validation of robustness methods.
+- Generation of figures for the accompanying paper.
+- Transparent documentation of the simulation pipeline.
 
 ## Notes
 
