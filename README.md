@@ -30,15 +30,22 @@ The final portfolio is constructed using a unified ensemble of these estimates.
 ## Repository Structure
 
 multi-axis-robust-portfolio-optimization/
+
 │
 ├── notebooks/
+
 │   └── robustness.ipynb        # Main research notebook
+
 │
-├── figures/                    # Saved charts and plots
+
+├── figures/   # Saved charts and plots
+
 │   ├── ...
 │
+
 ├── requirements.txt            # Python dependencies
 │
+
 └── README.md                   # Project documentation
 
 ---
