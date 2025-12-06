@@ -4,7 +4,7 @@
 This repository contains the code, simulations, and empirical pipeline for a unified multi-axis robustness framework in portfolio optimization.  
 The methodology combines shrinkage estimation, bootstrap aggregation, and parametric modeling (GBM-based) to improve stability and out-of-sample performance in mean–variance portfolios.
 
-The notebook included here was used to generate the experimental results for my accompanying research paper (currently under preparation).
+The notebook included here was used to generate the experimental results for my accompanying research paper.
 
 ---
 
@@ -74,12 +74,12 @@ Users may download identical series using the ticker list in the notebook.
 ## Status
 
 - Research notebook: Complete  
-- Paper: In preparation (theoretical sections under revision)  
-- Results: Being finalized for publication-level presentation  
+- Paper: Complete
+- Results:Complete
 
 ---
 
 ## License
 
-This repository is currently private and does not include a license.  
-A license will be added upon public release.
+This repository is currently public and does include a license.  
+
