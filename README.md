@@ -53,7 +53,7 @@ multi-axis-robust-portfolio-optimization/
 ## Usage
 
 1. Clone the repository:
-   git clone https://github.com/<your-username>/multi-axis-robust-portfolio-optimization
+   git clone https://github.com/<your-username>multi-axis-robust-portfolio-optimization
 
 2. Install dependencies:
    pip install -r requirements.txt
