@@ -1,45 +1,76 @@
-# Robustness Notebook Overview
+# Multi-Axis Robust Portfolio Optimization  
+**Simulation and Empirical Analysis Repository**
 
-This notebook implements the full unified multi-axis robustness framework used in the empirical analysis of the research project *Multi-Axis Robust Portfolio Optimization*. It serves as the computational backbone for generating simulations, covariance estimates, and portfolio results.
+This repository contains the primary simulation notebook used in the empirical analysis of the research paper **_Multi-Axis Robust Portfolio Optimization_**, recently submitted to *The Journal of Portfolio Management*.
 
-## Contents
+The notebook implements a unified robustness framework for mean–variance portfolio optimization and serves as the end-to-end computational pipeline for all portfolio simulations, covariance estimation procedures, and robustness diagnostics reported in the paper.
 
-The notebook includes:
+---
+
+## Overview
+
+The implemented framework addresses multiple sources of estimation uncertainty in portfolio construction through a unified, practitioner-oriented design.
+
+Key components include:
 
 - **Shrinkage Covariance Estimation**  
-  Ledoit–Wolf style regularization for stabilizing covariance matrices.
+  Ledoit–Wolf–style regularization to stabilize noisy sample covariance matrices.
 
 - **Bootstrap Aggregation**  
-  Resampled covariance estimates with variance reduction and robust averaging.
+  Resampled covariance estimation with aggregation to reduce sampling variability and estimation risk.
 
-- **Parametric Modeling (GBM)**  
-  Forward-looking covariance generation using Geometric Brownian Motion.
+- **Parametric Modeling (Geometric Brownian Motion)**  
+  Forward-looking covariance generation using GBM-based stress simulations.
 
-- **Unified Ensemble Construction**  
-  Combination of shrinkage, bootstrap, and parametric covariance estimates.
+- **Unified Multi-Axis Ensemble**  
+  Integration of structural, sampling, and parametric covariance estimates into a single ensemble estimator.
 
-- **Efficient Frontier & Risk Analysis**  
-  Markowitz optimization under multiple robustness regimes.
+- **Markowitz Optimization**  
+  Efficient frontier construction and risk–return analysis under multiple robustness regimes.
 
 - **Out-of-Sample Evaluation**  
-  Rolling-window simulations using raw Close prices.
+  Rolling-window backtesting using raw Close prices to ensure consistency and avoid data-adjustment artifacts.
 
-- **Figure Generation**  
-  All plots and heatmaps used for empirical interpretation.
+- **Figures and Diagnostics**  
+  All plots and diagnostic outputs used for empirical interpretation and robustness assessment.
+
+---
 
 ## Purpose
 
-This notebook is designed for:
+This repository is intended to:
 
-- Reproducible research.
-- Empirical validation of robustness methods.
-- Generation of figures for the accompanying paper.
-- Transparent documentation of the simulation pipeline.
+- Enable **full reproducibility** of the empirical results.
+- Provide a transparent reference implementation of multi-axis robustness techniques.
+- Support practitioner and research exploration of robust portfolio construction.
+- Generate the figures and diagnostics used in the submitted manuscript.
+
+---
+
+## Data and Reproducibility
+
+- Market data is **not included** in this repository.  
+  The notebook specifies a fixed ticker universe and automatically downloads corresponding raw Close price data when executed.
+
+- All simulations are fully scripted and reproducible conditional on random seeds.
+
+---
+
+## Use of AI Assistance
+
+All model design, mathematical formulation, and core implementation logic were developed by the author.
+
+AI-based tools were used **solely as auxiliary assistance** for:
+- code formatting and organization,
+- improving readability and comments,
+- debugging and error tracing,
+- and documentation and markdown polishing.
+
+AI systems were **not used** to generate research ideas, modeling decisions, or empirical conclusions.
+
+---
 
 ## Notes
 
-- Data is not included.  
-  Use the ticker list inside the notebook to download identical raw Close prices.
-
-- All results are preliminary and may be updated as the theoretical sections of the paper are refined.
-
+- Results correspond to the empirical analysis underlying the submitted manuscript and may evolve if additional robustness checks or refinements are incorporated.
+- This code is provided for **research and educational purposes** and is not intended as production trading infrastructure.
