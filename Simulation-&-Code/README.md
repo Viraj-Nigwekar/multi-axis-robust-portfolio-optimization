@@ -73,3 +73,5 @@ AI systems were **not used** to generate research ideas, modeling decisions, or 
 
 - Results correspond to the empirical analysis underlying the submitted manuscript and may evolve if additional robustness checks or refinements are incorporated.
 - This code is provided for **research and educational purposes** and is not intended as production trading infrastructure.
+- ⚠️ Note: All reported Sharpe ratios are computed using daily out-of-sample returns under a rolling estimation framework. Equal-weight and GMV portfolios are included as baseline sanity checks.
+
