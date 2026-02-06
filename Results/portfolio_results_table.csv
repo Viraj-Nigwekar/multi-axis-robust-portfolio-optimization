@@ -1,0 +1,5 @@
+Portfolio,Annualized Return,Annualized Volatility,Sharpe Ratio
+Equal-Weight (1/N),0.174,0.204,0.754
+GMV (Minimum Variance),0.106,0.154,0.555
+Equal-Weight (1/N) — Net of 10 bps,0.174,0.204,0.754
+GMV (Minimum Variance) — Net of 10 bps,0.104,0.154,0.542
