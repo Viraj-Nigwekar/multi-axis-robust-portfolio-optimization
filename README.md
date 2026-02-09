@@ -26,7 +26,7 @@ The final portfolio is constructed as an equal-weight ensemble of these allocati
 ## Usage
 
 1. Clone the repository:
-```bash
+
 git clone https://github.com/Viraj-Nigwekar/multi-axis-robust-portfolio-optimization.git
 cd multi-axis-robust-portfolio-optimization
 
