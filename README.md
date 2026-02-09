@@ -37,14 +37,18 @@ jupyter notebook notebooks/robustness.ipynb
 
 The notebook executes the full rolling-window experiment, including portfolio construction, evaluation, and diagnostic analysis.
 
-Data
+---
+
+## Data
 
 All experiments use daily raw Close prices sourced from Stooq.
 Price data is not included in this repository.
 
 The notebook contains the complete ticker list and data-loading logic required to reproduce the results.
 
-Reproducibility
+---
+
+## Reproducibility
 
 Fixed hyperparameters are used across all methods
 
@@ -54,7 +58,9 @@ Sharpe ratios are computed from daily out-of-sample returns and annualized consi
 
 Saved figures correspond directly to notebook outputs
 
-Status
+---
+
+## Status
 
 Research notebook: Complete
 
@@ -62,11 +68,15 @@ Empirical results: Complete
 
 Paper: Complete
 
-License
+---
 
-This repository is currently public and does not include a license.
+##  License
+
+This repository is currently public and does include a license.
 All code is provided for research and educational purposes.
 
-Notes
+---
+
+## Notes
 
 This repository accompanies a research paper and emphasizes methodological clarity, reproducibility, and stability, rather than production deployment.
