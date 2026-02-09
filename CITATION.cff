@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+title: "Multi-Axis Robust Portfolio Optimization"
+authors:
+  - family-names: Nigwekar
+    given-names: Viraj
+date-released: 2025-12-07
+version: 1.0.0
+url: https://github.com/Viraj-Nigwekar/multi-axis-robust-portfolio-optimization
