@@ -1,0 +1,7 @@
+k,axes,distance_to_3axis
+2,shrink+bootstrap,0.012754146260578657
+2,shrink+parametric,0.03365396900400072
+2,bootstrap+parametric,0.04329237150750327
+3,shrink+bootstrap+parametric,0.0
+4,4-axis (redundant),0.021646185753751636
+5,5-axis (redundant),0.021646185753751636

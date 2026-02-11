@@ -1,0 +1,4 @@
+Pair,Correlation
+Shrinkage vs Bootstrap,0.9323654461561469
+Shrinkage vs Parametric,0.9751378983709341
+Bootstrap vs Parametric,0.9771800749022856
