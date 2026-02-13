@@ -1,7 +1,7 @@
 # Multi-Axis Robust Portfolio Optimization  
 **Simulation and Empirical Analysis Repository**
 
-This repository contains the primary simulation notebook used in the empirical analysis of the research paper **_Multi-Axis Robust Portfolio Optimization_**.
+This repository contains the primary simulation notebook used in the empirical analysis of the research paper **_Consensus Robustness in Portfolio Optimization_**.
 The notebook implements a unified robustness framework for mean–variance portfolio optimization and serves as the end-to-end computational pipeline for all portfolio simulations, covariance estimation procedures, and robustness diagnostics reported in the paper.
 
 ---
