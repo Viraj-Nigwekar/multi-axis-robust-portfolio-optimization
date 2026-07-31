@@ -1,82 +1,147 @@
 # Multi-Axis Robust Portfolio Optimization
 
-This repository contains the empirical pipeline and implementation for a **unified multi-axis robustness framework** in mean–variance portfolio optimization.  
-The framework integrates shrinkage-based covariance regularization, bootstrap aggregation, and parametric (GBM-based) modeling to improve **stability, robustness, and out-of-sample behavior** under estimation uncertainty.
+A reproducible research implementation of a unified multi-axis robustness framework for mean–variance portfolio optimization.
 
-The code in this repository was used to generate the experimental results reported in the accompanying research paper.
+This repository contains the complete empirical pipeline used to evaluate a portfolio optimization framework that integrates covariance shrinkage, bootstrap aggregation, and parametric scenario modeling. The implementation emphasizes reproducibility, methodological clarity, and robust out-of-sample evaluation under estimation uncertainty.
 
----
+The accompanying research paper is available on SSRN:
 
-## Key Idea
-
-Classical Markowitz portfolio optimization is highly sensitive to noise in estimated means and covariances.  
-Rather than addressing estimation error along a single dimension, this project treats robustness as an **ensemble property** arising from diversification across multiple uncertainty axes.
-
-The framework combines:
-
-- **Structural robustness** via covariance shrinkage  
-- **Sampling robustness** via bootstrap aggregation  
-- **Parametric robustness** via scenario-based (GBM) modeling  
-
-Each axis produces an independent portfolio allocation.  
-The final portfolio is constructed as an equal-weight ensemble of these allocations to reduce variance without introducing additional tuning parameters.
+**SSRN:** *https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5874942*
 
 ---
 
-## Usage
+# Overview
 
-1. Clone the repository:
+Classical mean–variance (Markowitz) portfolio optimization is highly sensitive to estimation error in expected returns and covariance matrices. Small changes in these estimates can produce substantially different portfolio allocations.
+
+Rather than addressing a single source of uncertainty, this project treats robustness as an ensemble property by combining multiple complementary robustness mechanisms into a unified portfolio construction framework.
+
+The framework integrates three independent robustness axes:
+
+* **Structural Robustness** — Covariance shrinkage regularization
+* **Sampling Robustness** — Bootstrap aggregation
+* **Parametric Robustness** — Geometric Brownian Motion (GBM) scenario modeling
+
+Each robustness axis independently generates a portfolio allocation. The final portfolio is constructed as an equal-weight ensemble of these allocations, providing improved stability while avoiding additional tuning parameters.
+
+---
+
+# Features
+
+* Multi-axis robust portfolio optimization framework
+* Covariance shrinkage estimation
+* Bootstrap portfolio aggregation
+* GBM-based scenario generation
+* Rolling-window out-of-sample evaluation
+* Portfolio performance analysis
+* Risk-adjusted performance metrics
+* Fully reproducible research pipeline
+
+
+---
+
+# Installation
+
+Clone the repository:
+
+```bash
 git clone https://github.com/Viraj-Nigwekar/multi-axis-robust-portfolio-optimization.git
 cd multi-axis-robust-portfolio-optimization
+```
 
-2. Install dependencies:
+Install the required dependencies:
+
+```bash
 pip install -r requirements.txt
+```
 
-3. Run the analysis:
+---
+
+# Usage
+
+Launch the notebook:
+
+```bash
 jupyter notebook notebooks/robustness.ipynb
+```
 
-The notebook executes the full rolling-window experiment, including portfolio construction, evaluation, and diagnostic analysis.
+The notebook executes the complete experimental pipeline, including:
 
----
-
-## Data
-
-All experiments use daily raw Close prices sourced from Stooq.
-Price data is not included in this repository.
-
-The notebook contains the complete ticker list and data-loading logic required to reproduce the results.
-
----
-
-## Reproducibility
-
-Fixed hyperparameters are used across all methods
-
-All portfolios are evaluated using rolling out-of-sample windows
-
-Sharpe ratios are computed from daily out-of-sample returns and annualized consistently
-
-Saved figures correspond directly to notebook outputs
+* Data loading
+* Covariance estimation
+* Portfolio construction
+* Rolling-window evaluation
+* Performance comparison
+* Diagnostic analysis
+* Figure generation
 
 ---
 
-## Status
+# Data
 
-Research notebook: Complete
+The experiments use daily historical closing prices obtained from **Stooq**.
 
-Empirical results: Complete
+To keep the repository lightweight, raw market data is not included. The notebook contains the complete ticker list together with the data-loading logic required to reproduce every experiment.
 
-Paper: Complete
-
----
-
-##  License
-
-This repository is currently public and does include a license.
-All code is provided for research and educational purposes.
+No proprietary datasets are required.
 
 ---
 
-## Notes
+# Reproducibility
 
-This repository accompanies a research paper and emphasizes methodological clarity, reproducibility, and stability, rather than production deployment.
+This repository is designed to facilitate reproducible research.
+
+The implementation uses:
+
+* Fixed hyperparameters across all methods
+* Consistent rolling out-of-sample evaluation
+* Standardized annualized performance metrics
+* Reproducible figure generation
+* Notebook outputs that correspond directly to the reported experimental results
+
+---
+
+# Outputs
+
+Running the notebook generates:
+
+* Portfolio allocation comparisons
+* Rolling cumulative return curves
+* Risk–return analysis
+* Sharpe ratio comparisons
+* Drawdown analysis
+* Performance summary statistics
+* Publication-quality figures
+
+---
+
+# Project Status
+
+* ✅ Research implementation complete
+* ✅ Experimental evaluation complete
+* ✅ Manuscript complete
+* 🔄 Ongoing maintenance and documentation improvements
+
+---
+
+# Citation
+
+If you use this repository in your research, please cite the accompanying paper.
+
+```bibtex
+% Add your BibTeX citation here after publication or SSRN upload.
+```
+
+---
+
+# License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+---
+
+# Notes
+
+This repository accompanies an academic research paper and is intended primarily as a reproducible research implementation rather than a production trading system.
+
+Contributions, suggestions, and constructive feedback are welcome.
